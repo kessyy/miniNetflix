@@ -1,144 +1,75 @@
-html, body {
-  width: inherit;
-  margin: 0;
-  padding: 0;
-  background-color: black;
-  color: #FFFF;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-img {
-  max-width: 100%;
+body {
+    margin: 0;
+    font-family: 'Lucida Grande', tahoma,verdana,arial,sans-serif;
+    line-height: 1.28;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: content-box;
+    background-blend-mode: lighten;
+    /* opacity: 0.2; */
+    background-image: url("images/netflix-background-1.png");
 }
 
 .header {
-  padding: 0px 10px 5px 10px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  margin-bottom: 0px; 
-  background-color: black;  
+    position: fixed;
+    top: 30px;
+    width: 100%;
+    overflow: hidden;
+    /* height: 100px; */
+}
+#indexSignIn {
+    line-height: normal;
+    padding: 7px 17px;
+    font-size: 20px;
+    margin-right: 15px;
+    float: right;
+}
+.authLinksButtons {
+    background-color: #e50914;
+    line-height: normal;
+    padding: 7px 17px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffff;
+    border-radius: 5px;
 }
 
-.main-nav {
-  padding: 0 30px 0 20px;
+a {
+    text-decoration: none;
+    color: #ffff;
+}
+a:hover {
+    color: rgb(88, 3, 3);
+    font-size: larger;
+}
+form {
+    margin: auto;
+    height: 400px;
+    background-color: rgba(24, 14, 14, 0.6);
+    background-blend-mode: lighten;
+    width: 500px;
+    border-radius: 10px;
+    border: 1px; 
+    padding-top: 100px;
+    margin-top: 50px;
+    color: #ffff;
 }
 
-.header a {
-  color: #FFFF;
-  text-decoration: none;
-  margin: 0px; 
-  padding: 20px; 
+.sign-in form input {
+    width: 250px;
+    height: 40px;
+    margin-left: 10px; 
+    margin-bottom: 30px;
+    padding-left: 10px;
+    font-size: 18px;
+} 
+
+#sign-up {
+    display: none;
 }
 
-.header a:hover {
-  color: gray;
+.description {
+    color: #ffff;
+    margin-top: 300px;
+    font-size: 25px;
 }
-.header form {
-  float: right;
-  margin: 40px;
-}
-.header input {
-  background-color: black;
-  color: gray;
-  width: 300px;
-}
-
- /* End of header */
-
-
-.container {
-  padding-top: 100px;
-}
-
-.flexbox {
-  display: grid;
-  grid-gap: 0px;
-  grid-template-columns: auto auto auto auto auto;
-}
-
-.flexbox img {
-  transition: transform .3s;  
-}
-
-.flexbox img:hover {
-  transition: transform .3s;
-  -ms-transform: scale(1.4);
-  -webkit-transform: scale(1.4);  
-  transform: scale(1.4);
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
-}
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
-}
-.popup {
-  margin: 70px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 30%;
-  position: relative;
-  transition: all 5s ease-in-out;
-}
-.popup h2 {
-  margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
-}
-.popup .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
-}
-.popup .close:hover {
-  color: grey;
-}
-.popup .content {
-  /* max-height: 30%; */
-  color:black;
-  overflow: auto;
-}
-
-/* End of container */
-
-.footerLinks ul {
-  list-style: none;
-  
-  
-}
-
-.footerLinks a {
-  color:gray;
-  text-decoration: none;
-  padding: 0;
-}
-
-.footerLinks a:hover {
-  color: #FFFF;
-  text-decoration: underline;
-}
-
-
-footer p {
-  text-align: center;
-  color: gray;
-}
-
-

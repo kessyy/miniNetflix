@@ -1,0 +1,112 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="home.css">
+  <title>Netflix</title>
+</head>
+<body>
+  <div class="header" id="topnav">
+    <img src ="images/Netflix_Logo.jpg" alt ="Netflix Logo">
+      <ul>
+      <a class="nav" href="#home">Home</a>
+      <a class ="nav" href ="#">TV Shows</a>
+      <a class ="nav" href ="#">Movies</a>
+      <a class ="nav" href ="#">Recently Added</a>
+      <a class ="nav" href ="#">My Netflix</a>
+      <a class ="nav" href ="#">Favorites</a> 
+    </ul>
+      <form action="Index.html" class ="nav">
+        <input id="search" type="text" placeholder="Title, people, genres" name="search">
+        <!-- <a href="#">KIDS</a>
+        <a href="#"><img src="images/bell.png"></a> -->
+      </form>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("topnav");
+      if (x.className === "header") {
+        x.className += " responsive";
+      } else {
+        x.className = "header";
+      }
+    }
+    </script>
+
+  <section class="container" >
+    <h1 id="home">Popular on Netflix</h1>
+      <div class="flexbox">
+        <a href="#popups"><img id="img1" src="images/aladdin.jpg" alt="Aladdin" ></a>
+        <a href="#popups"><img id="img2" src="images/Hobbs and Shaw.jpg" alt="Hobbs and Shaw"></a>
+        <a href="#popups"><img id="img3" src="images/hustlers.jpg" alt="Hustlers"></a>
+        <a href="#popups"><img id="img4" src="images/little.jpeg" alt="Little"></a>
+        <a href="#popups"><img id="img5" src="images/Maleficient.jpg" alt="Maleficient"></a>
+        <a href="#popups"><img id="img6" src="images/princessswitch.jpg" alt="Princess Switch"></a>
+              
+      </div>
+
+    <h1 id ="home">Trending now</h1>
+      <div class ="flexbox">
+        <a href="#popups"><img id="img7" src="images/blackish.jpeg" alt="Blackish"></a>
+        <a href="#popups"><img id="img8" src="images/bones.jpeg" alt="Bones"></a>
+        <a href="#popups"><img id="img9" src="images/flash.jpg" alt="Flash"></a>
+        <a href="#popups"><img id="img10" src="images/frozen2.jpg" alt="Frozen"></a>
+        <a href="#popups"><img id="img11" src="images/game night.jpg" alt="Game Night"></a>
+        <a href="#popups"><img id="img12" src="images/gotham.jpeg" alt="Gotham"></a>
+      </div>
+      <div class ="flexbox">
+        <a href="#popups"><img id="img13" src="images/hawaii.jpg" alt="Hawaii Five O"></a>
+        <a href="#popups"><img id="img14" src="images/lethal weapon.jpg" alt="Lethal Weapon"></a>
+        <a href="#popups"><img id="img15" src="images/moneyheist.jpg" alt="Money Heist"></a>
+        <a href="#popups"><img id="img16" src="images/msec.jpg" alt="Madam Secretary"></a>
+        <a href="#popups"><img id="img17" src="images/scorpion.jpg" alt="Scorpion"></a>
+        <a href="#popups"><img id="img18" src="images/supernatural.jpg" alt="SuperNatural"></a>
+      </div>
+    <h1 id ="home">TV Shows</h1>
+      <div class ="flexbox">
+         <a href="#popups"><img id="img19" src="images/Big bang.jpg" alt="The Big Bang Theory"></a>
+         <a href="#popups"><img id="img20" src="images/fresh prince.jpg" alt="Fresh Prince of Bel Air"></a>
+         <a href="#popups"><img id="img21" src="images/mel and jo.jpg" alt="Melissa and Joey"></a>
+         <a href="#popups"><img id="img22" src="images/mom.jpeg" alt="Mom"></a>
+         <a href="#popups"><img id="img23" src="images/neighborhood.jpg" alt="Neighborhood"></a>
+         <a href="#popups"><img id="img24" src="images/telenovelaa.jpg" alt="Telenovela"></a>
+      </div>
+  <div id ="popups" class="overlay">
+    <div class="popup">
+      <h2>Movie Details</h2>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        <ul>
+        <li> Rated: ________</li>
+        <li>Realised: _________</li>
+        <li>Runtime: __________</li>
+        <li>Genre: __________</li>
+        <li>Director: __________</li>
+        <li>Writer: _________ </li>
+        <li>Actors:_________</li>
+        <li>Plot:___________</li>
+        <li>Langauge:_________</li>
+        <li>Country:_________</li>
+        </ul>
+      </div>
+    </div> 
+  </div>   
+  </section>
+
+  <footer>
+    <div class="footerLinks">
+      <a href="#">Help Center</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Contact Us</a>
+      
+      </div>
+
+  <p>&copy 2019 Netflix.</p>
+  </footer>
+  </div>
+</body>
+</html>
