@@ -8,16 +8,19 @@
         <title>Netflix</title>
     </head>
     <body>
-        <div class = "sign-in">
-        <form action ="home.html" method ="GET" id ="sign-in">
+        <div class = "signForm">
+        <div class ="sign-in">
+            <form action ="home.html" method ="GET" id ="sign-in">
             <center><input type ="text" placeholder="Enter username or email" required></input><br><br>
             <input type ="password" placeholder="Enter password" required></input><br><br>
-            <!-- <center><a href ="home.html" id ="sign-up" class ="authLinksButtons"><strong>Sign In</strong></a></center> -->
             <input type ="submit" value="log in" class ="authLinksButtons"> <br><br>
-           Do not have an account <a href ="index.html">SIGN UP</a></center>
+            
+           Do not have an account 
+           <a href ="#sign-up" onclick="view()" class ="authLinksButtons" >
+            SIGN UP</a></center>
         </form>
     </div>
-    <div id ="sign-up">
+    <div class ="sign-up" id ="sign-up">
         <form action ="home.html" method ="GET" id ="sign-up">
             <center><h1>Create a new account</h1></center>
             <center><form action ="home.html" method ="GET">
@@ -136,6 +139,13 @@
                     </select></br></center>
                     <br><br>
                 <center><input type ="submit" value="Create" class ="authLinksButtons"></input></center>
-            </div></form>
+            </form></div>
+            </div>
+            <script>
+                function view() {
+                 document.getElementById('sign-up').setAttribute('style', 'display:block');
+                 document.getElementById('sign-in').setAttribute('style', 'display:none');
+                 };
+        </script>
     </body>
 </html>

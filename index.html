@@ -15,7 +15,11 @@
 
     <div class ="description "><center><h1>Unlimited movies, TV</h1> <h2>shows, and more.</h2> 
        <h3> Watch anywhere. Cancel anytime.</h3></center></div>
-       <center><a href ="login.html#sign-up" class ="authLinksButtons"><strong>TRY IT NOW</strong></a></center>
-
+       <center><a href ="login.html" onclick="view()" class ="authLinksButtons"><strong>TRY IT NOW</strong></a></center>
+       <script>
+        function view() {
+         document.getElementById('sign-up').setAttribute('style', 'display:block');
+         };
+</script>
     </body>
 </html>
