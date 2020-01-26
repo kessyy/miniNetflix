@@ -10,15 +10,20 @@
     <body>
         <div class ="header">
         <!-- <img src ="images/Netflix_Logo.jpg" alt ="Netflix Logo"> -->
-        <a href ="login.html" id ="indexSignIn" class ="authLinksButtons">Sign In</a>
+        <a href ="login.html" id ="indexSignIn" onclick ="signIn()" class ="authLinksButtons">Sign In</a>
         </div>
 
     <div class ="description "><center><h1>Unlimited movies, TV</h1> <h2>shows, and more.</h2> 
        <h3> Watch anywhere. Cancel anytime.</h3></center></div>
-       <center><a href ="login.html" onclick="view()" class ="authLinksButtons"><strong>TRY IT NOW</strong></a></center>
+       <center><a href ="login.html#sign-up" onclick="signUp()" class ="authLinksButtons"><strong>TRY IT NOW</strong></a></center>
        <script>
-        function view() {
+        function signUp() {
          document.getElementById('sign-up').setAttribute('style', 'display:block');
+         document.getElementById('sign-in').setAttribute('style', 'display:none');
+         };
+        function signIn(){
+         document.getElementById('sign-in').setAttribute('style', 'display:block');
+         document.getElementById('sign-up').setAttribute('style', 'display:none');
          };
 </script>
     </body>

@@ -16,7 +16,7 @@
             <input type ="submit" value="log in" class ="authLinksButtons"> <br><br>
             
            Do not have an account 
-           <a href ="#sign-up" onclick="view()" class ="authLinksButtons" >
+           <a href ="#sign-up" onclick="signUp()" class ="authLinksButtons" >
             SIGN UP</a></center>
         </form>
     </div>
@@ -137,15 +137,22 @@
                     <option value="1971">1971</option>
                     <option value="1970">1970</option>
                     </select></br></center>
-                    <br><br>
+                    <br>
                 <center><input type ="submit" value="Create" class ="authLinksButtons"></input></center>
+                <center>Already have an account 
+                <a href ="#sign-in" onclick="signIn()"  >
+                 SIGN IN</a></center>
             </form></div>
             </div>
             <script>
-                function view() {
+                function signUp() {
                  document.getElementById('sign-up').setAttribute('style', 'display:block');
                  document.getElementById('sign-in').setAttribute('style', 'display:none');
                  };
+                function signIn(){
+                 document.getElementById('sign-in').setAttribute('style', 'display:block');
+                 document.getElementById('sign-up').setAttribute('style', 'display:none');
+                }
         </script>
     </body>
 </html>
