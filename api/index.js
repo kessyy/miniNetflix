@@ -27,7 +27,8 @@ mongoose.connect(dbConfig.url, {
 var port = process.env.PORT || 8080;
 
 app.get('/', (req, res) => res.send('Welcome to Netflix'));
-
+// Require Movies routes
+require('./app/routes/user.routes.js')(app);
 
 app.listen(port, function () {
      console.log("Live at " + port);
