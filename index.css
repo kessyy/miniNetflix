@@ -9,6 +9,9 @@ body {
     /* opacity: 0.2; */
     background-image: url("images/netflix-background-1.png");
 }
+.container-fluid {
+    background-image: url('images/netflify.jpg');
+}
 /* .container {
     position: relative;
     overflow: hidden;
@@ -66,11 +69,10 @@ a:hover {
 }
 form {
     margin: auto;
-    /* margin-top: 10px; */
-    height: 400px;
+    height: auto;
     background-color: rgba(24, 14, 14, 0.6);
     background-blend-mode: lighten;
-    width: 500px;
+    width: auto;
     border-radius: 10px;
     border: 1px; 
     padding-top: 100px;
@@ -100,16 +102,24 @@ div.sign-up {
     margin-top: 0px;
     color: #ffff;
     position: relative;
+    padding: 10px;
 
 }
 
 .description {
     color: rgb(190, 184, 184);
-    margin-top: 300px;
+    display: inline-block;
+    text-align: center;
     font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 1040px) {
+/* @media screen and (max-width: 1040px) {
    .header {
        position: fixed;
        width: 100%;
@@ -162,4 +172,4 @@ div.sign-up {
         color: #ffff;
         border-radius: 5px;
     }
-}
+} */
