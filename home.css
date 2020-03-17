@@ -72,7 +72,7 @@ li {
 
 .favorite:hover {
   cursor:hand; */
-/* .overlay {
+ .overlay {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -117,7 +117,7 @@ li {
 .popup .content {
   color:black;
   overflow: auto;
-} */
+} 
 
 /* End of container */
 .footer a{

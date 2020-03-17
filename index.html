@@ -28,17 +28,18 @@
         <title>Netflix</title>
     </head>
     <body>
-        <section class ="container-fluid">
+        <section class ="container-fluid site-background">
         <div class ="header">
-        <!-- <img src ="images/Netflix_Logo.jpg" alt ="Netflix Logo"> -->
+        <img src ="images/Netflix_Logo.jpg" alt ="Netflix Logo">
         <a href ="login.html" id ="indexSignIn" onclick ="signIn()" class ="authLinksButtons">Sign In</a>
         </div>
-
+        <div class ="site-background">
     <div class ="description container"><h1>Unlimited movies, TV</h1> <h2>shows, and more.</h2> 
        <h3> Watch anywhere. Cancel anytime.</h3>
        <br><br>
        <a href ="login.html#sign-up" onclick="signUp()" class ="authLinksButtons"><strong>TRY IT NOW</strong></a>
     </div>
+</div>
        <script>
         function signUp() {
          document.getElementById('sign-up').setAttribute('style', 'display:block');

@@ -12,12 +12,8 @@ if (!config.get('PrivateKey')) {
     console.error('FATAL ERROR: PrivateKey is not defined.');
     process.exit(1);
 }
-// mongoose.connect('mongodb://localhost/mongo-games')
-//     .then(() => console.log('Now connected to MongoDB!'))
-//     .catch(err => console.error('Error connecting to database', err));
 
- const dbConfig = require('./config/database.config.js');
-//  const mongoose = require('mongoose');
+const dbConfig = require('./config/database.config.js');
 
 mongoose.Promise = global.Promise;
 
