@@ -2,3 +2,4 @@
 database.config.js
 default.json
 custom-environment-variables.json
+./.history

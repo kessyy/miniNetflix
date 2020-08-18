@@ -1,28 +1,16 @@
 body {
     margin: 0;
     font-family: 'Lucida Grande', tahoma, verdana, arial, sans-serif;
-    line-height: 1.28;
+    /* line-height: 1.28; */
     height: 100%;
     width: 100%;
-    /* background-repeat: no-repeat;
-    background-size: cover;
-    background-origin: content-box;
-    background-blend-mode: lighten;
-    opacity: 0.2; */
-    /* background-image: url("images/netflix-background-1.png"); */
+    overflow: hidden;
 }
-.site-background {
-    height: 100%;
-    width: 100%;
-    background-image: url('images/netflify.jpg');
-}
-
 .header {
     position: fixed;
     top: 30px;
     width: 100%;
     overflow: hidden;
-    /* height: 100px; */
 }
 #indexSignIn {
     line-height: normal;
@@ -83,7 +71,6 @@ div.sign-in {
     /* display: none; */
     
 }
-
 div.sign-up {
     display: none;
     margin-right: 10px;
@@ -91,18 +78,12 @@ div.sign-up {
     color: #ffff;
     position: relative;
     padding: 10px;
-
 }
-
 .description {
-    color: rgb(190, 184, 184);
+    color: #fff;
     display: inline-block;
-    text-align: center;
-    font-size: 25px;
+    text-align: left;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    top: 40%;
+    
 }
