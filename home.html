@@ -1,116 +1,65 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="home.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src ="home.js"></script>
-  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="styles/home.css">
   <title>Netflix</title>
 </head>
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-        </button>
-        <a class="navbar-brand" href="#"><img src ="images/Netflix_Logo.jpg" alt ="Netflix Logo"></a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">TV shows</a></li>
-          <li><a href="#">Movies</a></li>
-          <li><a href="#">Recently Added</a></li>
-          <li><a href="favorite.html">My Netflix</a></li>
-        </ul>
-        <form class="navbar-form navbar-left" action="/action_page.php">
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search" name="search">
-            <div class="input-group-btn">
-              <button class="btn btn-default" type="submit">
-                <i class="glyphicon glyphicon-search"></i>
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </nav>
-  <section class="container-fluid" id ="container" >
+  <div class="header">
+    <img src ="images/Netflix_Logo.jpg" alt ="Netflix Logo">
+      <a class="active" href="#home">Home</a>
+      <a href ="#">TV Shows</a>
+      <a href ="#">Movies</a>
+      <a href ="#">Recently Added</a>
+      <a href ="#">My Netflix</a>
+      <a href ="#">Favorites</a> 
+      <form action="Index.html">
+        <input id="search" type="text" placeholder="Title, people, genres" name="search">
+        <a href="#">KIDS</a>
+        <a href="#"><img src="images/bell.png"></a>
+      </form>
+  </div>
+
+  <section class="container" >
     <h1 id="home">Popular on Netflix</h1>
       <div class="flexbox">
-        <a href="#popups"><img class ="img-responsive img-fluid" id="img1" src="images/aladdin.jpg" alt="Aladdin" data-toggle="modal" data-target="#popups"></a>
-        <a href="#popups"><img class ="img-responsive img-fluid" id="img2" src="images/Hobbs and Shaw.jpg" alt="Hobbs and Shaw" data-toggle="modal" data-target="#popups"></a>
-        <a href="#popups"><img class ="img-responsive img-fluid" id="img3" src="images/hustlers.jpg" alt="Hustlers" data-toggle="modal" data-target="#popups"></a>
-        <a href="#popups"><img class ="img-responsive img-fluid" id="img4" src="images/little.jpeg" alt="Little" data-toggle="modal" data-target="#popups"></a>
-        <a href="#popups"><img class ="img-responsive img-fluid" id="img5" src="images/Maleficient.jpg" alt="Maleficient" data-toggle="modal" data-target="#popups"></a>
-        <a href="#popups"><img class ="img-responsive img-fluid" id="img6" src="images/princessswitch.jpg" alt="Princess Switch" data-toggle="modal" data-target="#popups"></a>
+        <a href="#popups"><img id="img1" src="images/aladdin.jpg" alt="Aladdin" ></a>
+        <a href="#popups"><img id="img2" src="images/Hobbs and Shaw.jpg" alt="Hobbs and Shaw"></a>
+        <a href="#popups"><img id="img3" src="images/hustlers.jpg" alt="Hustlers"></a>
+        <a href="#popups"><img id="img4" src="images/little.jpeg" alt="Little"></a>
+        <a href="#popups"><img id="img5" src="images/Maleficient.jpg" alt="Maleficient"></a>
+        <a href="#popups"><img id="img6" src="images/princessswitch.jpg" alt="Princess Switch"></a>
               
       </div>
 
     <h1 id ="home">Trending now</h1>
       <div class ="flexbox">
-        <a href="#popups"><img class ="img-responsive img-fluid" id="img7" src="images/blackish.jpeg" alt="Blackish" data-toggle="modal" data-target="#popups"></a>
-        <a href="#popups"><img class ="img-responsive img-fluid" id="img8" src="images/bones.jpeg" alt="Bones" data-toggle="modal" data-target="#popups"></a>
-        <a href="#popups"><img class ="img-responsive img-fluid" id="img9" src="images/flash.jpg" alt="Flash" data-toggle="modal" data-target="#popups"></a>
-        <a href="#popups"><img class ="img-responsive img-fluid" id="img10" src="images/frozen2.jpg" alt="Frozen" data-toggle="modal" data-target="#popups"></a>
-        <a href="#popups"><img class ="img-responsive img-fluid" id="img11" src="images/game night.jpg" alt="Game Night" data-toggle="modal" data-target="#popups"></a>
-        <a href="#popups"><img class ="img-responsive img-fluid" id="img12" src="images/gotham.jpeg" alt="Gotham" data-toggle="modal" data-target="#popups"></a>
+        <a href="#popups"><img id="img7" src="images/blackish.jpeg" alt="Blackish"></a>
+        <a href="#popups"><img id="img8" src="images/bones.jpeg" alt="Bones"></a>
+        <a href="#popups"><img id="img9" src="images/flash.jpg" alt="Flash"></a>
+        <a href="#popups"><img id="img10" src="images/frozen2.jpg" alt="Frozen"></a>
+        <a href="#popups"><img id="img11" src="images/game night.jpg" alt="Game Night"></a>
+        <a href="#popups"><img id="img12" src="images/gotham.jpeg" alt="Gotham"></a>
       </div>
       <div class ="flexbox">
-        <a href="#popups"><img class ="img-responsive img-fluid" id="img13" src="images/hawaii.jpg" alt="Hawaii Five O" data-toggle="modal" data-target="#popups"></a>
-        <a href="#popups"><img class ="img-responsive img-fluid" id="img14" src="images/lethal weapon.jpg" alt="Lethal Weapon" data-toggle="modal" data-target="#popups"></a>
-        <a href="#popups"><img class ="img-responsive img-fluid" id="img15" src="images/moneyheist.jpg" alt="Money Heist" data-toggle="modal" data-target="#popups"></a>
-        <a href="#popups"><img class ="img-responsive img-fluid" id="img16" src="images/msec.jpg" alt="Madam Secretary" data-toggle="modal" data-target="#popups"></a>
-        <a href="#popups"><img class ="img-responsive img-fluid" id="img17" src="images/scorpion.jpg" alt="Scorpion" data-toggle="modal" data-target="#popups"></a>
-        <a href="#popups"><img class ="img-responsive img-fluid" id="img18" src="images/supernatural.jpg" alt="SuperNatural" data-toggle="modal" data-target="#popups"></a>
+        <a href="#popups"><img id="img13" src="images/hawaii.jpg" alt="Hawaii Five O"></a>
+        <a href="#popups"><img id="img14" src="images/lethal weapon.jpg" alt="Lethal Weapon"></a>
+        <a href="#popups"><img id="img15" src="images/moneyheist.jpg" alt="Money Heist"></a>
+        <a href="#popups"><img id="img16" src="images/msec.jpg" alt="Madam Secretary"></a>
+        <a href="#popups"><img id="img17" src="images/scorpion.jpg" alt="Scorpion"></a>
+        <a href="#popups"><img id="img18" src="images/supernatural.jpg" alt="SuperNatural"></a>
       </div>
     <h1 id ="home">TV Shows</h1>
       <div class ="flexbox">
-         <a href="#popups"><img class ="img-responsive img-fluid" id="img19" src="images/Big bang.jpg" alt="The Big Bang Theory" data-toggle="modal" data-target="#popups"></a>
-         <a href="#popups"><img class ="img-responsive img-fluid" id="img20" src="images/fresh prince.jpg" alt="Fresh Prince of Bel Air" data-toggle="modal" data-target="#popups"></a>
-         <a href="#popups"><img class ="img-responsive img-fluid" id="img21" src="images/mel and jo.jpg" alt="Melissa and Joey" data-toggle="modal" data-target="#popups"></a>
-         <a href="#popups"><img class ="img-responsive img-fluid" id="img22" src="images/mom.jpeg" alt="Mom" data-toggle="modal" data-target="#popups"></a>
-         <a href="#popups"><img class ="img-responsive img-fluid" id="img23" src="images/neighborhood.jpg" alt="Neighborhood" data-toggle="modal" data-target="#popups"></a>
-         <a href="#popups"><img class ="img-responsive img-fluid" id="img24" src="images/telenovelaa.jpg" alt="Telenovela" data-toggle="modal" data-target="#popups"></a>
+         <a href="#popups"><img id="img19" src="images/Big bang.jpg" alt="The Big Bang Theory"></a>
+         <a href="#popups"><img id="img20" src="images/fresh prince.jpg" alt="Fresh Prince of Bel Air"></a>
+         <a href="#popups"><img id="img21" src="images/mel and jo.jpg" alt="Melissa and Joey"></a>
+         <a href="#popups"><img id="img22" src="images/mom.jpeg" alt="Mom"></a>
+         <a href="#popups"><img id="img23" src="images/neighborhood.jpg" alt="Neighborhood"></a>
+         <a href="#popups"><img id="img24" src="images/telenovelaa.jpg" alt="Telenovela"></a>
       </div>
-      <!-- <div class="modal fade" id="popups" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">MOVIE DETAILS</h4>
-            </div>
-            <div class="modal-body">
-              <div class="content">
-                <ul>
-                <li>Rated: ________</li>
-                <li>Realised: _________</li>
-                <li>Runtime: __________</li>
-                <li>Genre: __________</li>
-                <li>Director: __________</li>
-                <li>Writer: _________ </li>
-                <li>Actors:_________</li>
-                <li>Plot:___________</li>
-                <li>Langauge:_________</li>
-                <li>Country:_________</li>
-                </ul>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-          
-        </div>
-      </div> -->
   <div id ="popups" class="overlay">
     <div class="popup">
       <h2>Movie Details</h2>
@@ -131,18 +80,18 @@
       </div>
     </div> 
   </div>   
-  
   </section>
 
-  <section class ="footer container-fluid">
-    <div class="footerLinks text-center">
+  <footer>
+    <div class="footerLinks">
       <a href="#">Help Center</a>
       <a href="#">Terms of Use</a>
       <a href="#">Contact Us</a>
+      
       </div>
-    <p class ="text-center">&copy 2019 Netflix.</p>
-    <p class ="text-center"> designed by <a href ="https://github.com/kessyy" target ="_blank">Es</a></p>
-  </section>
+
+  <p>&copy 2019 Netflix.</p>
+  </footer>
   </div>
 </body>
 </html>
